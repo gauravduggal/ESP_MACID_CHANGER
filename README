@@ -1,3 +1,7 @@
+////**********************************************************************************************
+EXAMPLE CODE for changing mac id of ESP8266 and hosting a webserver after connecting to a wifi ap!
+**********************************************************************************************////
+
 for use with NODEMCU ESP8266 12E
 1). Put the firmware from the firmware folder onto your esp8266
 2). use minicom / your favorite serial terminal to see the esp8266 boot up (Serial settings 115200bps 8n1).
