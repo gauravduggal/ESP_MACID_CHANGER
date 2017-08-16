@@ -1,0 +1,10 @@
+for use with NODEMCU ESP8266 12E
+1). Put the firmware from the firmware folder onto your esp8266
+2). use minicom / your favorite serial terminal to see the esp8266 boot up (Serial settings 115200bps 8n1).
+3). setup webrepl and restart esp8266 by power cycling.
+4). Change the SSID1, Password1, SSID2, Password2 in main.py at the top of the code.
+5). connect to the Wifi Access Point started by the esp8266. use webrepl to transfer boot.py, main.py, esp_data.py to the esp8266 filesystem.
+6). restart esp8266. On the console you will see the esp try to connect to the first ssid. after 21 seconds it will try to connect to the second SSID with the mac id list from esp_data.txt. 
+7). Every 21 seconds a new MAC id is assigned to the esp8266.
+8). After connection, it will print the ip assigned to it.
+9). An HTTP server is run on that IP address. Copy the ip address to your web browser. You should see a page displaying ESP SERVER page with pagevisits and current time.
